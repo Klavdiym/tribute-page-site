@@ -1,5 +1,5 @@
 
-       /* :root{
+       :root{
             background: linear-gradient(to top, #CCFFFF,  rgb(125, 199, 141));
         }
         #company-logo{
@@ -16,7 +16,7 @@
             border-radius: 14%;
             text-overflow: hidden;
             /*Prevents text from overflowing*/
-            /*white-space: pre-line;
+            white-space: pre-line;
             height:95%;
             width: 95%;
             margin-top: 20px;
@@ -27,53 +27,7 @@
         }
         #main-image{
             /*the one where click links to wiki*/
-            /*width: 500px;
+            width: 500px;
             height: 400px;
 
         }
-        #arrow-to-other-image{
-
-        }
-        #image-1{
-
-        }
-        #image-2{
-            
-        }
-        #image-3{
-            
-        }
-        h1{
-            font-size: 20px;
-        }
-        p{
-
-        }
-        a{
-
-        }
-        #flexbox-tribute{
-
-        }
-        #flexgrid-tribute{
-
-        }
-        div{
-
-        }
-        #chart{
-
-        }
-        header{
-            
-        }
-        footer{
-
-        }
-        #btn-animation-easter-egg{
-
-        }
-        #btn-destroy-page-easter-egg{
-            
-        }
-*/
