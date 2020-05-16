@@ -1,5 +1,162 @@
 <!DOCTYPE html>
 
+<style>
+
+html{
+    background:linear-gradient(rgb(16, 175, 127), teal) no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: rgb(57, 156, 26);
+    width: 98%;
+    height: 98%;
+    filter: grayscale(50%);
+    border-radius: 12%;
+}
+
+#logo{
+     -webkit-transform: scale(0.1); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.1); /* FF3.5+ */
+      -ms-transform: scale(0.1); /* IE9 */
+       -o-transform: scale(0.1); /* Opera 10.5+ */
+          transform: scale(0.1);
+          opacity: 0.2;
+          position: fixed;
+          top: 0px;
+          left: 5px;
+          padding: 1.5em;
+          margin: -261px 100px -100px -263px;
+          border: 9px solid rgb(173, 89, 33);
+          border-radius: 50%;
+}
+
+/*this class resizes pictures to half of themselves for them to appear higher quality on larger screens*/
+.retina{
+    -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.5); /* FF3.5+ */
+      -ms-transform: scale(0.5); /* IE9 */
+       -o-transform: scale(0.5); /* Opera 10.5+ */
+          transform: scale(0.5);
+             /* IE6–IE9 */
+             filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
+
+}
+
+#upper_left {
+width: 95px; height: 95px;
+position: absolute;
+top: 0; left: 0;
+rotate: -90deg;
+margin: -25px 3px 1px -22px;
+background-repeat: no-repeat;
+}
+
+#upper_right {
+width: 95px; height: 95px;
+position: absolute;
+top: 0;
+right: 0%;
+margin-right: -25px;
+margin-top: -22px;
+background-repeat: no-repeat;
+}
+
+#lower_left {
+width: 95px; height: 95px;
+position: absolute;
+bottom: 0%; left: 0;
+margin-left: -30px;
+margin-top: 50px !important;
+background-repeat: no-repeat;
+}
+
+#lower_right {
+width: 95px; height: 95px;
+bottom: 0%;
+right: 0%;
+position: absolute;
+margin-right: -30px;
+margin-top: 50px !important;
+background-repeat: no-repeat;
+rotate: -90deg;
+}
+
+.white-space-inline{
+    white-space: pre-line;
+}
+
+header{
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px azure; ;
+}
+
+#main-image{
+    border-radius: 10%;
+}
+
+#main-img-a{
+ display: block !important;
+ margin-left: auto;
+ margin-right: auto;
+ width: 500px;
+ height: 500px;
+ padding-top: 20px;
+}
+
+#main-img-div{
+    float: left;
+}
+
+#btn-next{
+    float: left;
+}
+
+
+</style>
+
+<img id="logo" class="retina" src="https://i.imgur.com/2VCu7Mg.png" alt="Lordicode's logo">
+
+<html>
+
+<body>
+    <img id="upper_left" class="retina"  src="/home/lordik/Desktop/663409_link_512x512.png" alt="left upper chain image"></img>
+    <img id="upper_right" class="retina" src="/home/lordik/Desktop/663409_link_512x512.png" alt="right upper chain image"></img>
+    <img id="lower_left" class="retina" src="/home/lordik/Desktop/663409_link_512x512.png" alt="left lower chain image"></img>
+    <img id="lower_right" class="retina" src="/home/lordik/Desktop/663409_link_512x512.png" alt="right lower corner chain image"></img>
+
+    <header class="white-space-inline">Shinichirō Watanabe
+                                            渡辺 信一郎
+    </header>
+
+    <div id="main-img-div"><a id="main-img-a" href="https://en.wikipedia.org/wiki/Shinichir%C5%8D_Watanabe"><img id="main-image" src="https://alchetron.com/cdn/shinichir-watanabe-091d0555-d013-4964-94fc-e75deb11e95-resize-750.jpeg" alt="photo of Shinchiro Watanabe in sunglasses and a suit"></a>
+    </div>
+    
+    <div id="btn-next"> <img class="retina" src="https://i.imgur.com/AvybCBZ.png" alt="Show next image"> </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- <html>
         <h1>Tribute page by Lordicode</h1>
      <img src="https://i.imgur.com/2VCu7Mg.png" class="logo" id="company-logo" alt="Company logo"></img>
@@ -130,7 +287,7 @@ form "sign up for updates"-->
 <div id="chain-right-down">
     <img src="https://www.pngarts.com/files/3/URL-Chain-Link-PNG-Free-Download.png" alt="chain icon">
 </div>
-</html>-->-->
+</html>-->
 <!--#Technology Stack   REQUIERNMENTS 
 
     1. You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
