@@ -95,27 +95,76 @@ header{
     text-shadow: 1px 1px 2px azure; ;
 }
 
-#main-image{
-    border-radius: 10%;
-}
-
 #main-img-a{
  display: block !important;
  margin-left: auto;
  margin-right: auto;
- width: 500px;
- height: 500px;
- padding-top: 20px;
+ width: auto;
+ height: auto;
 }
 
-#main-img-div{
-    float: left;
+#main-image{
+    border-radius: 10%;
+    width: auto;
+    height: auto;
 }
 
-#btn-next{
-    float: left;
+.parent {
+  display: flex;
+  height: auto; 
 }
 
+.child {
+  width: auto;  
+  height: auto; 
+  
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 33%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+
+.border{
+    height: 1px;
+    background-color: black;
+}
+
+.bio-container{
+    display: grid;
+    font-size: 20px;
+    min-height: 30px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2px;
+}
+.bio-img{
+    grid-column: 1/1;
+    grid-row: 1/2;
+    background-color: blue;
+}
+.bio-header{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: goldenrod;  
+}
+.bio-maintxt{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: firebrick;  
+}
 
 </style>
 
@@ -133,11 +182,111 @@ header{
                                             渡辺 信一郎
     </header>
 
-    <div id="main-img-div"><a id="main-img-a" href="https://en.wikipedia.org/wiki/Shinichir%C5%8D_Watanabe"><img id="main-image" src="https://alchetron.com/cdn/shinichir-watanabe-091d0555-d013-4964-94fc-e75deb11e95-resize-750.jpeg" alt="photo of Shinchiro Watanabe in sunglasses and a suit"></a>
+    <div class="parent">
+        <a id="main-img-a" href="https://en.wikipedia.org/wiki/Shinichir%C5%8D_Watanabe"><img id="main-image" class="retina" src="https://alchetron.com/cdn/shinichir-watanabe-091d0555-d013-4964-94fc-e75deb11e95-resize-750.jpeg" alt="photo of Shinchiro Watanabe in sunglasses and a suit"></a>
+    <div class="container">
+    <div id="btn-next" class="child"> <img class="retina" src="https://i.imgur.com/AvybCBZ.png" alt="Show next image"></div>
+    <div class="centered">Next</div> 
     </div>
-    
-    <div id="btn-next"> <img class="retina" src="https://i.imgur.com/AvybCBZ.png" alt="Show next image"> </div>
-</body>
+    </div>
+   <div class="border"></div>
+
+    <h1>Biography</h1>
+
+    <fieldset class="bio-container">
+        <img class="bio-img" alt="title card image">
+        <p class="bio-header">header</p>
+        <p class="bio-maintxt">Main</p>
+    </fieldset>
+    <fieldset class="bio-container">
+        <img class="bio-img" alt="title card image">
+        <p class="bio-header">header</p>
+        <p class="bio-maintxt">Main</p>
+    </fieldset>
+    <fieldset class="bio-container">
+        <img class="bio-img" alt="title card image">
+        <p class="bio-header">header</p>
+        <p class="bio-maintxt">Main</p>
+    </fieldset>
+    <fieldset class="bio-container">
+        <img class="bio-img" alt="title card image">
+        <p class="bio-header">header</p>
+        <p class="bio-maintxt">Main</p>
+    </fieldset>
+
+    <!--Titles, syponsis, color coded rating with link to MAL-->
+    <fieldset class="work-container">
+        <img class="work-img" alt="thumbnail">
+        <p class="work-header">header</p>
+        <p class="work-maintxt">Main</p>
+        <a class="color-coded-rating" href="#">8.9</a>
+    </fieldset>
+    <fieldset class="work-container">
+        <img class="work-img" alt="thumbnail">
+        <p class="work-header">header</p>
+        <p class="work-maintxt">Main</p>
+        <a class="color-coded-rating" href="#">8.9</a>
+    </fieldset>
+    <fieldset class="work-container">
+        <img class="work-img" alt="thumbnail">
+        <p class="work-header">header</p>
+        <p class="work-maintxt">Main</p>
+        <a class="color-coded-rating" href="#">8.9</a>
+    </fieldset>
+    <fieldset class="work-container">
+        <img class="work-img" alt="thumbnail">
+        <p class="work-header">header</p>
+        <p class="work-maintxt">Main</p>
+        <a class="color-coded-rating" href="#">8.9</a>
+    </fieldset>
+    <fieldset class="work-container">
+        <img class="work-img" alt="thumbnail">
+        <p class="work-header">header</p>
+        <p class="work-maintxt">Main</p>
+        <a class="color-coded-rating" href="#">8.9</a>
+    </fieldset>
+    <fieldset class="work-container">
+        <img class="work-img" alt="thumbnail">
+        <p class="work-header">header</p>
+        <p class="work-maintxt">Main</p>
+        <a class="color-coded-rating" href="#">8.9</a>
+    </fieldset>
+
+    <!--Most famous songs with audiosnippets-->
+    <fieldset>
+        <p>What title, Name of the song</p>
+        <p>Creators</p>
+        <source type="audio/mpeg">
+    </fieldset>
+    <fieldset>
+        <p>What title, Name of the song</p>
+        <p>Creators</p>
+        <source type="audio/mpeg">
+    </fieldset>
+    <fieldset>
+        <p>What title, Name of the song</p>
+        <p>Creators</p>
+        <source type="audio/mpeg">
+    </fieldset>
+    <fieldset>
+        <p>What title, Name of the song</p>
+        <p>Creators</p>
+        <source type="audio/mpeg">
+    </fieldset>
+    <fieldset>
+        <p>What title, Name of the song</p>
+        <p>Creators</p>
+        <source type="audio/mpeg">
+    </fieldset>
+
+    <!--Easter egg 1-->
+   <a></a>
+
+   <!--Easter egg 2-->
+   <a></a>
+
+    <footer>Copyright by Lordicode</footer>
+    </body>
 
 </html>
 
