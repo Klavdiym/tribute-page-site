@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 
 <style>
+:root{
+  background: linear-gradient(rgb(3, 68, 49), rgb(74, 223, 161));;
+}
 
 html{
-    background:linear-gradient(rgb(16, 175, 127), teal) no-repeat;
+    /*background:linear-gradient(rgb(16, 175, 127), teal);
     width: 100%;
-    height: 100%;
-}
+    height: 100%;*/
+   }
 
 body{
     background: rgb(57, 156, 26);
     width: 98%;
-    height: 98%;
+    height: auto;
     filter: grayscale(50%);
-    border-radius: 12%;
+    border-radius: 6%;
 }
 
 #logo{
@@ -99,78 +102,150 @@ header{
  display: block !important;
  margin-left: auto;
  margin-right: auto;
- width: auto;
- height: auto;
+ width: 480px;
+ height: 399px;
 }
 
 #main-image{
+    display: block;
     border-radius: 10%;
-    width: auto;
-    height: auto;
-}
-
-.parent {
-  display: flex;
-  height: auto; 
-}
-
-.child {
-  width: auto;  
-  height: auto; 
-  
-}
-
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.centered {
-  position: absolute;
-  top: 33%;
-  left: 47%;
-  transform: translate(-50%, -50%);
-  font-size: 15px;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px black;
-}
-
-.border{
-    height: 1px;
-    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    height: 399px;
+    -webkit-transform: scale(0.8); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.8); /* FF3.5+ */
+      -ms-transform: scale(0.8); /* IE9 */
+       -o-transform: scale(0.8); /* Opera 10.5+ */
+          transform: scale(0.8);
 }
 
 .bio-container{
     display: grid;
     font-size: 20px;
     min-height: 30px;
+    background-color:hsla(119, 50%, 70%, 0.45);
     width: 100%;
-    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 2px;
+    grid-auto-rows: 10px; /* new 
+  
+  grid-row-gap: 10px;*/
+  grid-column-gap: 5px;
+  justify-items: stretch !important;
 }
+
 .bio-img{
     grid-column: 1/1;
-    grid-row: 1/2;
-    background-color: blue;
+    grid-row: 1/3;
+  width: 200px;
+  height: 200px;
 }
+
 .bio-header{
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: goldenrod;  
-}
-.bio-maintxt{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    background-color: firebrick;  
+    font-weight: bold;
+    font-size: 18px;
 }
 
+.bio-maintxt{
+    grid-column: 2/4;
+    grid-row: 2/3;
+    font-size: 14px;
+}
+
+h1{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-box{
+  display:flex;
+  text-align: center;
+  margin: 8px;
+}
+
+.circle-small-box{
+    display:flex;
+  text-align: center;
+    margin: auto;  
+}
+
+.circle.small {
+	border: 4px solid #a1c9a1;
+	border-radius: 50%;
+	width: 10px;
+    height: 10px;
+	z-index: 86;
+}
+
+.circle.filled {
+	background-color: #f5fff5;
+    filter: grayscale(90%);
+}
+
+footer{
+    text-align: center;
+    margin: 10px 5px 10px 5px;
+}
+h2{
+    text-align: center;
+
+}
+
+.work-container{
+   
+   margin-left: 1em;
+   margin-right: 1em; 
+   display: grid;
+grid-template-columns: 1fr repeat(2, 2fr) 1fr;
+grid-template-rows: 1fr 4fr;
+grid-column-gap: 10px;
+grid-row-gap: 5px; 
+}
+
+.work-img{
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.work-header{
+ font-weight: bold;
+ font-style: italic;
+ font-size: 18px;
+ grid-area: 1 / 2 / 2 / 4;
+}
+
+.work-maintext{
+    font-size: 16px;
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.color-coded-rating{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+ grid-area: 1 / 4 / 3 / 5;
+}
+
+/*make everything resize on small screens
+ <fieldset class="work-container">
+        <img class="work-img" alt="thumbnail">
+        <p class="work-header">header</p>
+        <p class="work-maintxt">Main</p>
+        <a class="color-coded-rating" href="#">8.9</a>
+    </fieldset>*/
+@media screen {
+    
+}
 </style>
 
-<img id="logo" class="retina" src="https://i.imgur.com/2VCu7Mg.png" alt="Lordicode's logo">
+<a href="https://github.com/Klavdiym?tab=repositories">
+    <img id="logo" class="retina" src="https://i.imgur.com/2VCu7Mg.png" alt="Lordicode's logo"></a>
 
-<html>
 
 <body>
     <img id="upper_left" class="retina"  src="/home/lordik/Desktop/663409_link_512x512.png" alt="left upper chain image"></img>
@@ -182,276 +257,147 @@ header{
                                             渡辺 信一郎
     </header>
 
-    <div class="parent">
-        <a id="main-img-a" href="https://en.wikipedia.org/wiki/Shinichir%C5%8D_Watanabe"><img id="main-image" class="retina" src="https://alchetron.com/cdn/shinichir-watanabe-091d0555-d013-4964-94fc-e75deb11e95-resize-750.jpeg" alt="photo of Shinchiro Watanabe in sunglasses and a suit"></a>
-    <div class="container">
-    <div id="btn-next" class="child"> <img class="retina" src="https://i.imgur.com/AvybCBZ.png" alt="Show next image"></div>
-    <div class="centered">Next</div> 
-    </div>
-    </div>
-   <div class="border"></div>
+    
+        <a id="main-img-a" href="https://en.wikipedia.org/wiki/Shinichir%C5%8D_Watanabe">
+            <img id="main-image" class="retina" src="https://alchetron.com/cdn/shinichir-watanabe-091d0555-d013-4964-94fc-e75deb11e95-resize-750.jpeg" alt="photo of Shinchiro Watanabe in sunglasses and a suit">
+        </a>
 
+    <div class="container-box">
+       <div class="circle-small-box">
+    <div class="circle small">
+    </div>
+        <div class="circle small">
+    </div>
+        <div class="circle small">
+    </div>
+    </div>
+    </div>
+
+    <h2>“It actually kind of sucks having to be a director.<br> 
+        Once you do it, you discover how hard it really is.<br>  This is no kind of a job for a human being, let me tell you. 
+        <br>I think I ought to quit, but I can't really do anything else!” </h2>
+    
+    <div class="container-box">
+        <div class="circle-small-box">
+     <div class="circle small">
+     </div>
+         <div class="circle small">
+     </div>
+         <div class="circle small">
+     </div>
+     </div>
+     </div>
+ 
     <h1>Biography</h1>
 
     <fieldset class="bio-container">
-        <img class="bio-img" alt="title card image">
-        <p class="bio-header">header</p>
-        <p class="bio-maintxt">Main</p>
+        <img class="bio-img" src="https://static.tvtropes.org/pmwiki/pub/images/WatanabeShinichi.jpg" alt="title card image">
+        <p class="bio-header">1990-2004</p>
+        <p class="bio-maintxt">Watanabe was born in Kyoto. After joining the Japanese animation studio Sunrise, he supervised the episode direction and storyboards of numerous Sunrise anime, and soon made his 
+            directorial debut as co-director of the well-received Macross update, Macross Plus. His next effort, and first full directorial venture, 
+            was the 1998 series Cowboy Bebop, which received universal praise and is considered by many to be one of the greatest anime series of all time. 
+            It was followed by the 2001 film Knockin' on Heaven's Door. In 2003, Watanabe directed his first American-produced anime, 
+            the short films Kid's Story and A Detective Story, both part of The Wachowskis' The Animatrix, an anthology of animated short stories from The Matrix. 
+            His next directorial effort was the critically acclaimed 2004 anime series Samurai Champloo which began broadcasting on Fuji Television in Japan on May 19, 2004. </p>
     </fieldset>
     <fieldset class="bio-container">
-        <img class="bio-img" alt="title card image">
-        <p class="bio-header">header</p>
-        <p class="bio-maintxt">Main</p>
+        <img class="bio-img" src="https://img1.ak.crunchyroll.com/i/spire1/9f614a1f09ecc5b840e22348fc319d361366430967_full.jpg" alt="title card image">
+        <p class="bio-header">2004-2014</p>
+        <p class="bio-maintxt">Following the release of Samurai Champloo, Watanabe directed a short film called Baby Blue which was released on July 7, 2007 as a segment of the anthology film Genius Party. 
+            In recent years, he has been active as a creative music producer, overseeing the 2004 film Mind Game, 2008's Michiko & Hatchin, and supervising the storyboards for episode 12 of Tetsuwan Birdy: Decode.
+             In 2012, he directed the anime series Kids on the Slope (Japanese title: Sakamichi no Apollon), a coming-of-age story about young jazz musicians, which premiered in April 2012 on Fuji TV's Noitamina block.
+            In 2009 it was announced that Watanabe would be working as an associate producer on the upcoming live-action adaptation of Cowboy Bebop, alongside his fellow Sunrise staff members Kenji Uchida and Keiko Nobumoto. 
+            As of 2014, the project is in hiatus.</p>
     </fieldset>
     <fieldset class="bio-container">
-        <img class="bio-img" alt="title card image">
-        <p class="bio-header">header</p>
-        <p class="bio-maintxt">Main</p>
+        <img class="bio-img" src="https://assets.mubicdn.net/images/cast_member/49925/image-w240.jpg?1582544610" alt="title card image">
+        <p class="bio-header">2014-Current times</p>
+        <p class="bio-maintxt">During FicZone in Granada, Spain, it was reported that Watanabe was collaborating with anime studio BONES on a space science-fiction comedy.
+             BONES subsequently confirmed that the studio was working with Watanabe, but did not confirm the genre of the series. In late 2013, the original trailers for Space Dandy were released to the public. 
+             The dubbed version premiered on Adult Swim on its Toonami block on January 4, 2014 in the United States, hours before airing in Japan. He is frequently ranked among Japan's best animation directors.
+            Watanabe directed the anime short film Blade Runner Black Out 2022, which was released in 2017.
+             On November 29, 2018, it was announced that he would be creative producer of Blade Runner: Black Lotus, an anime series produced for Adult Swim and Crunchyroll.</p>
     </fieldset>
-    <fieldset class="bio-container">
-        <img class="bio-img" alt="title card image">
-        <p class="bio-header">header</p>
-        <p class="bio-maintxt">Main</p>
-    </fieldset>
+   
+    <div class="container-box">
+        <div class="circle-small-box">
+     <div class="circle small">
+     </div>
+         <div class="circle small">
+     </div>
+         <div class="circle small">
+     </div>
+     </div>
+     </div>
 
     <!--Titles, syponsis, color coded rating with link to MAL-->
     <fieldset class="work-container">
-        <img class="work-img" alt="thumbnail">
-        <p class="work-header">header</p>
-        <p class="work-maintxt">Main</p>
-        <a class="color-coded-rating" href="#">8.9</a>
+        <img class="work-img" src="https://cdn.myanimelist.net/images/anime/6/53829l.jpg" alt="thumbnail">
+        <p class="work-header">Space☆Dandy (2014)</p>
+        <p class="work-maintxt white-space-inline">The universe is a mysterious and strange place, full of even stranger and more mysterious aliens. Dandy's job is to hunt down unclassified aliens and register them for a reward. It sounds easy enough, but something weird always seems to happen along the way, like chance meetings with zombies, mystical ramen chefs, and adorable orphans. Hunting down aliens may not be easy, but it's definitely never boring.
+            With the help of his sidekicks, the adorable robot vacuum QT and cat-like alien Meow, and his slightly-used ship the Aloha Oe, Dandy roams the galaxy searching for new alien species. What he usually finds, however, is adventure, danger, and romance, and no two journeys (or universes) are ever the same. This is Space☆Dandy, baby!</p>
+        <a class="color-coded-rating" href="https://myanimelist.net/anime/20057/Space%E2%98%86Dandy?q=space%20">8.9</a>
     </fieldset>
     <fieldset class="work-container">
-        <img class="work-img" alt="thumbnail">
-        <p class="work-header">header</p>
-        <p class="work-maintxt">Main</p>
-        <a class="color-coded-rating" href="#">8.9</a>
+        <img class="work-img" src="https://cdn.myanimelist.net/images/anime/1611/96157.jpg" alt="thumbnail">
+        <p class="work-header">Carole & Tuesday (2019)</p>
+        <p class="work-maintxt white-space-inline">It has been 50 years since mankind began its migration to the terraformed Mars, where they live by in the comforts of advancement in AI. Carole lives in the metropolis of Alaba City, working part-time by day and playing keyboard by night. Tuesday has run away from her home in Hershell City to escape the grip of her wealthy family, and instead hopes to pursue music with her acoustic guitar.
+            After a fateful encounter, the two decide to perform music together. Up against the AI singers that dominate the music world, the two of them believe that together they can convey their feelings through their songs. Will hard work and luck be enough for the duo to create the biggest miracle that Mars has ever seen?</p>
+        <a class="color-coded-rating" href="https://myanimelist.net/anime/37435/Carole___Tuesday">8.9</a>
     </fieldset>
     <fieldset class="work-container">
-        <img class="work-img" alt="thumbnail">
-        <p class="work-header">header</p>
-        <p class="work-maintxt">Main</p>
-        <a class="color-coded-rating" href="#">8.9</a>
+        <img class="work-img" src="https://cdn.myanimelist.net/images/anime/4/64447.jpg" alt="thumbnail">
+        <p class="work-header">Zankyou no Terror (2014)</p>
+        <p class="work-maintxt white-space-inline">Painted in red, the word "VON" is all that is left behind after a terrorist attack on a nuclear facility in Japan. The government is shattered by their inability to act, and the police are left frantically searching for ways to crack down the perpetrators. The public are clueless—until, six months later, a strange video makes its way onto the internet. In it, two teenage boys who identify themselves only as "Sphinx" directly challenge the police, threatening to cause destruction and mayhem across Tokyo. Unable to stop the mass panic quickly spreading through the city and desperate for any leads in their investigation, the police struggle to act effectively against these terrorists, with Detective Kenjirou Shibazaki caught in the middle of it all.
+            Zankyou no Terror tells the story of Nine and Twelve, the two boys behind the masked figures of Sphinx. They should not exist, yet they stand strong in a world of deception and secrets while they make the city fall around them, all in the hopes of burying their own tragic truth.</p>
+        <a class="color-coded-rating" href="https://myanimelist.net/anime/23283/Zankyou_no_Terror">8.9</a>
     </fieldset>
     <fieldset class="work-container">
-        <img class="work-img" alt="thumbnail">
-        <p class="work-header">header</p>
-        <p class="work-maintxt">Main</p>
-        <a class="color-coded-rating" href="#">8.9</a>
+        <img class="work-img" src="https://cdn.myanimelist.net/images/anime/12/79781.jpg" alt="thumbnail">
+        <p class="work-header">Sakamichi no Apollon (2012)</p>
+        <p class="work-maintxt">Introverted classical pianist and top student Kaoru Nishimi has just arrived in Kyushu for his first year of high school. Having constantly moved from place to place since his childhood, he abandons all hope of fitting in, preparing himself for another lonely, meaningless year. That is, until he encounters the notorious delinquent Sentarou Kawabuchi.
+            Sentarou's immeasurable love for jazz music inspires Kaoru to learn more about the genre, and as a result, he slowly starts to break out of his shell, making his very first friend. Kaoru begins playing the piano at after-school jazz sessions, located in the basement of fellow student Ritsuko Mukae's family-owned record shop. As he discovers the immense joy of using his musical talents to bring enjoyment to himself and others, Kaoru's summer might just crescendo into one that he will remember forever.
+            Sakamichi no Apollon is a heartwarming story of friendship, music, and love that follows three unique individuals brought together by their mutual appreciation for jazz.</p>
+        <a class="color-coded-rating" href="https://myanimelist.net/anime/12531/Sakamichi_no_Apollon">8.9</a>
     </fieldset>
     <fieldset class="work-container">
-        <img class="work-img" alt="thumbnail">
-        <p class="work-header">header</p>
-        <p class="work-maintxt">Main</p>
-        <a class="color-coded-rating" href="#">8.9</a>
+        <img class="work-img" src="https://cdn.myanimelist.net/images/anime/11/29134.jpg" alt="thumbnail">
+        <p class="work-header">Samurai Champloo (2004)</p>
+        <p class="work-maintxt white-space-inline">Fuu Kasumi is a young and clumsy waitress who spends her days peacefully working in a small teahouse. That is, until she accidentally spills a drink all over one of her customers! With a group of samurai now incessantly harassing her, Fuu desperately calls upon another samurai in the shop, Mugen, who quickly defeats them with his wild fighting technique, utilizing movements reminiscent to that of breakdancing. Unfortunately, Mugen decides to pick a fight with the unwilling ronin Jin, who wields a more precise and traditional style of swordfighting, and the latter proves to be a formidable opponent. The only problem is, they end up destroying the entire shop as well as accidentally killing the local magistrate's son.
+            For their crime, the two samurai are captured and set to be executed. However, they are rescued by Fuu, who hires the duo as her bodyguards. Though she no longer has a place to return to, the former waitress wishes to find a certain samurai who smells of sunflowers and enlists the help of the now exonerated pair to do so. Despite initially disapproving of this idea, the two eventually agree to assist the girl in her quest; thus, the trio embark upon an adventure to find this mysterious warrior—that is, if Fuu can keep Mugen and Jin from killing each other.
+            Set in an alternate Edo Period of Japan, Samurai Champloo follows the journey of these three eccentric individuals in an epic quest full of action, comedy, and dynamic sword fighting, all set to the beat of a unique hip-hop infused soundtrack.</p>
+        <a class="color-coded-rating" href="https://myanimelist.net/anime/205/Samurai_Champloo">8.9</a>
     </fieldset>
     <fieldset class="work-container">
-        <img class="work-img" alt="thumbnail">
-        <p class="work-header">header</p>
-        <p class="work-maintxt">Main</p>
-        <a class="color-coded-rating" href="#">8.9</a>
+        <img class="work-img" src="https://cdn.myanimelist.net/images/anime/4/19644.jpg" alt="thumbnail">
+        <p class="work-header">Cowboy Bebop (1998)</p>
+        <p class="work-maintxt white-space-inline">In the year 2071, humanity has colonized several of the planets and moons of the solar system leaving the now uninhabitable surface of planet Earth behind. The Inter Solar System Police attempts to keep peace in the galaxy, aided in part by outlaw bounty hunters, referred to as "Cowboys." The ragtag team aboard the spaceship Bebop are two such individuals.
+            Mellow and carefree Spike Spiegel is balanced by his boisterous, pragmatic partner Jet Black as the pair makes a living chasing bounties and collecting rewards. Thrown off course by the addition of new members that they meet in their travels—Ein, a genetically engineered, highly intelligent Welsh Corgi; femme fatale Faye Valentine, an enigmatic trickster with memory loss; and the strange computer whiz kid Edward Wong—the crew embarks on thrilling adventures that unravel each member's dark and mysterious past little by little.
+            Well-balanced with high density action and light-hearted comedy, Cowboy Bebop is a space Western classic and an homage to the smooth and improvised music it is named after.</p>
+        <a class="color-coded-rating" href="https://myanimelist.net/anime/1/Cowboy_Bebop">8.9</a>
     </fieldset>
 
-    <!--Most famous songs with audiosnippets-->
-    <fieldset>
-        <p>What title, Name of the song</p>
-        <p>Creators</p>
-        <source type="audio/mpeg">
-    </fieldset>
-    <fieldset>
-        <p>What title, Name of the song</p>
-        <p>Creators</p>
-        <source type="audio/mpeg">
-    </fieldset>
-    <fieldset>
-        <p>What title, Name of the song</p>
-        <p>Creators</p>
-        <source type="audio/mpeg">
-    </fieldset>
-    <fieldset>
-        <p>What title, Name of the song</p>
-        <p>Creators</p>
-        <source type="audio/mpeg">
-    </fieldset>
-    <fieldset>
-        <p>What title, Name of the song</p>
-        <p>Creators</p>
-        <source type="audio/mpeg">
-    </fieldset>
+    <div class="container-box">
+        <div class="circle-small-box">
+     <div class="circle small">
+     </div>
+         <div class="circle small">
+     </div>
+         <div class="circle small">
+     </div>
+     </div>
+     </div>
 
-    <!--Easter egg 1-->
+        <!--Easter egg 1-->
    <a></a>
 
    <!--Easter egg 2-->
    <a></a>
 
-    <footer>Copyright by Lordicode</footer>
+    <footer>&copy;Copyright by Lordicode&copy;
+                     <br>(KLAVDII MAKSENKOV)
+    </footer>
+
     </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <html>
-        <h1>Tribute page by Lordicode</h1>
-     <img src="https://i.imgur.com/2VCu7Mg.png" class="logo" id="company-logo" alt="Company logo"></img>
-    <head>
-        
-       <p>Tribute to
-           Shinichirō Watanabe 
-           (渡辺 信一郎)</p>
-
-    </head>
-    <body>
-        <header>
-            <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
-            <p>Shinichirō Watanabe 
-                Born May 24, 1965
-            </p>
-            <img id="main-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Shinichiro_Watanabe_20090703_Japan_Expo_01.jpg/1280px-Shinichiro_Watanabe_20090703_Japan_Expo_01.jpg" alt="Picture of Shinichirō Watanabe">
-        </header>
-
-        <div id="arrow-next-image">
-            <a id="arrow-next" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Arrow_Blue_Right_001.svg/1200px-Arrow_Blue_Right_001.svg.png" alt="arrow showing the next image"></a>
-        </div>
-        <main>
-            <div id="box-container-main-info">
-            <img id="photo-flex" class="retina" src="" alt="Watanabe in early life">
-            <h1 id="subsection_title">Early life</h1>
-            <p>Text</p>
-            </div>
-            <div><--here will be three dots that will seperate subsections</div>-->
-            <!--<div id="box-container-main-info">
-            <img id="photo-flex" class="retina" src="" alt="Watanabe from 1998 to 2007">
-            <h1 id="subsection_title">1998-2007</h1>
-            <p>Text</p>
-            </div>
-            <div><-here will be three dots that will seperate subsections--><!--</div>
-            <div id="box-container-main-info">
-            <img id="photo-flex" class="retina" src="" alt="Watanabe from 2007 to 2014">
-            <h1 id="subsection_title">2007-2014</h1>
-            <p>Text</p>
-            </div>
-            <div>here will be three dots that will seperate subsections--><!--</div>
-            <div id="box-container-main-info">
-            <img id="photo-flex" class="retina"  src="" alt="Modern photo of Watanabe">
-            <h1 id="subsection_title">2014-Nowdays</h1>
-            <p>Text</p>
-            </div>
-            
-            <fieldset id="flex-grid">
-            <div id="flex-grid-works-scores">
-                <img id="thumbnail" class="retina" src="" alt="">
-                <p>Name</p>
-                <p>Synopsis</p>
-                <div id="colorcoded-score"></div>
-            </div>
-            <div id="flex-grid-works-scores">
-                <img id="thumbnail" class="retina" src="" alt="">
-                <p>Name</p>
-                <p>Synopsis</p>
-                <div id="colorcoded-score"></div>
-            </div>
-            <div id="flex-grid-works-scores">
-                <img id="thumbnail" class="retina" src="" alt="">
-                <p>Name</p>
-                <p>Synopsis</p>
-                <div id="colorcoded-score"></div>
-            </div>
-            <div id="flex-grid-works-scores">
-                <img id="thumbnail" class="retina" src="" alt="">
-                <p>Name</p>
-                <p>Synopsis</p>
-                <div id="colorcoded-score"></div>
-            </div>
-            <div id="flex-grid-works-scores">
-                <img id="thumbnail" class="retina" src="" alt="">
-                <p>Name</p>
-                <p>Synopsis</p>
-                <div id="colorcoded-score"></div>
-            </div>
-            </fieldset>
-            <fieldset id="flex-grid-bar-chart">
-               Add flexgrid with audio snippets of the most famous songs from each of his works
-                Shows average score of his works over time with a bar chart. On click links to mal of that year for his works-->
-           <!--  </fieldset>
-        </main>
-       This should be remade into "Want to get updates? Sign up here. with btn send"
-        <form action="/my-handling-form-page" method="post">
-            <ul>
-             <li>
-               <label for="name">Name:</label>
-               <input type="text" id="name" name="user_name">
-             </li>
-             <li>
-               <label for="mail">E-mail:</label>
-               <input type="email" id="mail" name="user_email">
-             </li>
-             <li>
-               <label for="msg">Message:</label>
-               <textarea id="msg" name="user_message"></textarea>
-             </li>
-            </ul>
-           </form>-->
-          <!--   <footer id="footer">&copy;Copyright Lordicode (Klavdii Maksenkov)</footer>
-            <a id="easter-egg-onHover-anim"></a>
-            <a id="easter-egg-radioBtn-dest"></a>
-
-    </body>
-   ADD ALL ELEMENTS FIRST, THEN STYLE THEM
-
-        Button-arrow to show the next image with "checked" imitation of javascript https://stackoverflow.com/questions/12851023/javascript-onclick-simulation-using-only-css-and-html-without-javascript
-   animated Chart showing changes of the scores of his shows every year
-grid with name of the work, his role, mean score
-grid for images plus text to them with his biography
-footer with copyright
-button normal looking to show animatioan left corner
-button-explosion to destroy site
-4 chainlinks to connect body to root
-flex box main works with main songs with audio below
-form "sign up for updates"-->
-<!--<div id="chain-left-up"> On checked on easter-egg-radioBtn-destroy it changes to https://cdn.pixabay.com/photo/2014/04/03/11/52/chain-312403_1280.png and whole layout gets destroyed-->
-   <!-- <img src="https://www.pngarts.com/files/3/URL-Chain-Link-PNG-Free-Download.png" alt="chain icon">
-</div>
-<div id="chain-left-down">
-    <img src="https://www.pngarts.com/files/3/URL-Chain-Link-PNG-Free-Download.png" alt="chain icon">
-</div>
-<div id="chain-right-up">
-    <img src="https://www.pngarts.com/files/3/URL-Chain-Link-PNG-Free-Download.png" alt="chain icon">
-</div>
-<div id="chain-right-down">
-    <img src="https://www.pngarts.com/files/3/URL-Chain-Link-PNG-Free-Download.png" alt="chain icon">
-</div>
-</html>-->
-<!--#Technology Stack   REQUIERNMENTS 
-
-    1. You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
-
-#Content
-
-    1. My tribute page should have an element with corresponding id="main", which contains all other elements.
-    2. I should see an element with corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
-    3. I should see either a <figure> or <div> element with corresponding id="img-div".
-    4. Within the "img-div" element, I should see an <img> element with a corresponding id="image".
-    5. Within the "img-div" element, I should see either a <figcaption> or <div> element with a corresponding id="img-caption" that contains textual content describing the image shown in "img-div".
-    6. I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page.
-    7. I should see an <a> element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to "_blank" in order for your link to open in a new tab (i.e. target="_blank").
-
-#Layout
-
-    1. The <img> element should responsively resize, relative to the width of its parent element, without exceeding its original size.
-    2. The <img> element should be centered within its parent element.-->
