@@ -5,20 +5,6 @@
   background: linear-gradient(rgb(3, 68, 49), rgb(74, 223, 161));;
 }
 
-html{
-    /*background:linear-gradient(rgb(16, 175, 127), teal);
-    width: 100%;
-    height: 100%;*/
-   }
-
-body{
-    background: rgb(57, 156, 26);
-    width: 98%;
-    height: auto;
-    filter: grayscale(50%);
-    border-radius: 3%;
-}
-
 #logo{
      -webkit-transform: scale(0.1); /* Saf3.1+, Chrome */
      -moz-transform: scale(0.1); /* FF3.5+ */
@@ -34,7 +20,15 @@ body{
           padding: 1.5em;
           margin: -261px 100px -100px -263px;
           border-radius: 50%;
-          z-index: 100;}
+          }
+
+body{
+    background: rgb(57, 156, 26);
+    width: 98%;
+    height: auto;
+    filter: grayscale(50%);
+    border-radius: 3%;
+}
 
 #tribute-link{
     position: fixed;
@@ -63,7 +57,7 @@ h2{
 }
 
 #upper_left {
-width: 95px; height: 95px;
+width: 60px; height: 60px;
 position: absolute;
 top: 0; left: 0;
 rotate: -90deg;
@@ -72,7 +66,7 @@ background-repeat: no-repeat;
 }
 
 #upper_right {
-width: 95px; height: 95px;
+width: 80px; height: 80px;
 position: absolute;
 top: 0;
 right: 0%;
@@ -82,7 +76,7 @@ background-repeat: no-repeat;
 }
 
 #lower_left {
-width: 95px; height: 95px;
+width: 80px; height: 80px;
 position: absolute;
 bottom: 0%; left: 0;
 margin-left: -30px;
@@ -91,7 +85,7 @@ background-repeat: no-repeat;
 }
 
 #lower_right {
-width: 95px; height: 95px;
+width: 80px; height: 80px;
 bottom: 0%;
 right: 0%;
 position: absolute;
@@ -212,7 +206,7 @@ h2{
 }
 
 .work-container{
-    margin-left: 1em;
+   margin-left: 1em;
    margin-right: 1em; 
    border-radius: 2%;
    display: grid;
@@ -351,7 +345,7 @@ img{
   }*/
   }
 #quote{
-    border: 1px solid black;
+ border: 1px solid black;
  border-radius: 50%;
  width: 100px;
  height: 100px;
@@ -362,12 +356,14 @@ img{
 }
 
 </style>
+<img id="logo" src="https://i.imgur.com/2VCu7Mg.png" alt="Lordicode's logo">
+
 <main id="main"> 
 
 
 <body>
-    <div  id="tribute-link" href="https://github.com/Klavdiym?tab=repositories" target="_blank">
-    <img id="logo" src="https://i.imgur.com/2VCu7Mg.png" alt="Lordicode's logo"></div><img id="upper_left" src="/home/lordik/Desktop/663409_link_512x512.png" alt="left upper chain image"></img>
+    
+    <img id="upper_left" src="/home/lordik/Desktop/663409_link_512x512.png" alt="left upper chain image"></img>
     <img id="upper_right" class="retina" src="/home/lordik/Desktop/663409_link_512x512.png" alt="right upper chain image"></img>
     <img id="lower_left" class="retina" src="/home/lordik/Desktop/663409_link_512x512.png" alt="left lower chain image"></img>
     <img id="lower_right" class="retina" src="/home/lordik/Desktop/663409_link_512x512.png" alt="right lower corner chain image"></img>
@@ -417,7 +413,7 @@ img{
  
     <h1 class="text">Biography in animation</h1>
 
-    <fieldset  class="bio-container text" style="background-image: url(https://i.imgur.com/BbNOh7r.jpg);" id="tribute-info">
+    <fieldset  class="bio-container text" style="background-image: url(https://i.imgur.com/BbNOh7r.jpg); background:linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5))," id="tribute-info">
         <img class="bio-img" src="https://static.tvtropes.org/pmwiki/pub/images/WatanabeShinichi.jpg" alt="title card image">
         <p class="bio-header">1990-2004</p>
         <p class="bio-maintxt">Watanabe was born in Kyoto in 1965. After joining the Japanese animation studio Sunrise, he supervised the episode direction and storyboards of numerous Sunrise anime, and soon made his 
@@ -549,12 +545,6 @@ img{
      </div>
      </div>
      </div>
-
-        <!--Easter egg 1-->
-   <a></a>
-
-   <!--Easter egg 2-->
-   <a></a>
 
     <footer class="text">&copy;Copyright by Lordicode&copy;
                      <br>(KLAVDII MAKSENKOV)
